@@ -22,11 +22,19 @@ namespace SEMobileProject
             SetContentView(Resource.Layout.StartMenu);
 
             Button Login = FindViewById<Button>(Resource.Id.StartMenuLoginButton);
+            Button BackTest = FindViewById<Button>(Resource.Id.BackTestButton);
 
             Login.Click += Login_Click;
+            BackTest.Click += BackToLogin;
             
         }
-        
+
+        private void BackToLogin(object sender, EventArgs e)
+        {
+            SetContentView(Resource.Layout.StartMenu);
+
+        }
+
         private void Login_Click(object sender, EventArgs e)
         {
             SetContentView(Resource.Layout.MainMenu);

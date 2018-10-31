@@ -4,39 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
-        android:visibility="invisible"
+        android:id="@+id/MainMenuImage"
         android:layout_width="fill_parent"
-        android:layout_height="75.0dp" />
+        android:layout_height="300.0dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/MyFridgeButton"
         android:text="My Fridge Menu" />
-    <ImageView
-        android:visibility="invisible"
-        android:layout_width="fill_parent"
-        android:layout_height="75.0dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/FriendFridgeButton"
         android:text="My Friend's Fridge Menu" />
-    <ImageView
-        android:visibility="invisible"
-        android:layout_width="fill_parent"
-        android:layout_height="75.0dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/RecipeGeneratorButton"
-        android:text="RecipeGenerator" />
-    <ImageView
-        android:visibility="invisible"
-        android:layout_width="fill_parent"
-        android:layout_height="75.0dp" />
+        android:text="Recipe Generator" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/GameButton"
         android:text="The Game" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackTestButton"
+        android:text="Back To Login Test" />
 </LinearLayout>
