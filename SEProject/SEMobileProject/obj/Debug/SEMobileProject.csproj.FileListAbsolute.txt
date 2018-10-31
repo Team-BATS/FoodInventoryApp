@@ -1,0 +1,14 @@
+D:\SEProject\SEMobileProject\obj\Debug\SEMobileProject.csprojResolveAssemblyReference.cache
+D:\SEProject\SEMobileProject\obj\Debug\SEMobileProject.csproj.CoreCompileInputs.cache
+D:\SEProject\SEMobileProject\bin\Debug\SEMobileProject.dll
+D:\SEProject\SEMobileProject\bin\Debug\SEMobileProject.pdb
+D:\SEProject\SEMobileProject\bin\Debug\SEMobileProject.SEMobileProject.apk
+D:\SEProject\SEMobileProject\bin\Debug\SEMobileProject.SEMobileProject-Signed.apk
+D:\SEProject\SEMobileProject\obj\Debug\SEMobileProject.dll
+D:\SEProject\SEMobileProject\obj\Debug\SEMobileProject.pdb
+D:\SEProject\SEMobileProject\obj\Debug\android\bin\SEMobileProject.SEMobileProject.apk
+D:\SEProject\SEMobileProject\obj\Debug\res\layout\startmenu.xml
+D:\SEProject\SEMobileProject\obj\Debug\res\layout\mainmenu.xml
+D:\SEProject\SEMobileProject\obj\Debug\res\values\strings.xml
+D:\SEProject\SEMobileProject\obj\Debug\R.cs.flag
+D:\SEProject\SEMobileProject\obj\Debug\uploadflags.txt
