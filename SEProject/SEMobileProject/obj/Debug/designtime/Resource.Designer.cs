@@ -24,39 +24,41 @@ namespace SEMobileProject
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
-		public static void UpdateIdValues()
-		{
-		}
-		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F010007
-			public const int BackTestButton = 2130771975;
-			
-			// aapt resource value: 0x7F010004
-			public const int FriendFridgeButton = 2130771972;
-			
-			// aapt resource value: 0x7F010006
-			public const int GameButton = 2130771974;
-			
-			// aapt resource value: 0x7F010002
-			public const int MainMenuImage = 2130771970;
-			
-			// aapt resource value: 0x7F010003
-			public const int MyFridgeButton = 2130771971;
+			// aapt resource value: 0x7F010008
+			public const int BackTestButton = 2130771976;
 			
 			// aapt resource value: 0x7F010005
-			public const int RecipeGeneratorButton = 2130771973;
+			public const int FriendFridgeButton = 2130771973;
 			
-			// aapt resource value: 0x7F010009
-			public const int StartMenuBarrier = 2130771977;
+			// aapt resource value: 0x7F010007
+			public const int GameButton = 2130771975;
+			
+			// aapt resource value: 0x7F010003
+			public const int MainMenuImage = 2130771971;
+			
+			// aapt resource value: 0x7F010002
+			public const int MainMenuUsername = 2130771970;
+			
+			// aapt resource value: 0x7F010004
+			public const int MyFridgeButton = 2130771972;
+			
+			// aapt resource value: 0x7F010006
+			public const int RecipeGeneratorButton = 2130771974;
 			
 			// aapt resource value: 0x7F010010
-			public const int StartMenuLoginButton = 2130771984;
+			public const int StartMenuBarrier = 2130771984;
 			
-			// aapt resource value: 0x7F010008
-			public const int StartMenuLogo = 2130771976;
+			// aapt resource value: 0x7F010011
+			public const int StartMenuLoginButton = 2130771985;
+			
+			// aapt resource value: 0x7F010009
+			public const int StartMenuLogo = 2130771977;
+			
+			// aapt resource value: 0x7F010012
+			public const int StartMenuSignUpButton = 2130771986;
 			
 			static Id()
 			{

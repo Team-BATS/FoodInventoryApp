@@ -11,15 +11,17 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
-        public static final int BackTestButton=0x7f040005;
-        public static final int FriendFridgeButton=0x7f040002;
-        public static final int GameButton=0x7f040004;
-        public static final int MainMenuImage=0x7f040000;
-        public static final int MyFridgeButton=0x7f040001;
-        public static final int RecipeGeneratorButton=0x7f040003;
-        public static final int StartMenuBarrier=0x7f040007;
-        public static final int StartMenuLoginButton=0x7f040008;
-        public static final int StartMenuLogo=0x7f040006;
+        public static final int BackTestButton=0x7f040006;
+        public static final int FriendFridgeButton=0x7f040003;
+        public static final int GameButton=0x7f040005;
+        public static final int MainMenuImage=0x7f040001;
+        public static final int MainMenuUsername=0x7f040000;
+        public static final int MyFridgeButton=0x7f040002;
+        public static final int RecipeGeneratorButton=0x7f040004;
+        public static final int StartMenuBarrier=0x7f040008;
+        public static final int StartMenuLoginButton=0x7f040009;
+        public static final int StartMenuLogo=0x7f040007;
+        public static final int StartMenuSignUpButton=0x7f04000a;
     }
     public static final class layout {
         public static final int mainmenu=0x7f020000;

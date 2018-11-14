@@ -20,4 +20,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/StartMenuLoginButton"
         android:text="Login" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StartMenuSignUpButton"
+        android:text="SignUp" />
 </LinearLayout>

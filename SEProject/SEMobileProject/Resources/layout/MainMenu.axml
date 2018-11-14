@@ -3,10 +3,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35.0dp"
+        android:id="@+id/MainMenuUsername"
+        android:text="Username's Fridge"
+        android:textSize="28sp"
+        android:gravity="center" />
     <ImageView
         android:id="@+id/MainMenuImage"
         android:layout_width="fill_parent"
-        android:layout_height="300.0dp" />
+        android:layout_height="265.0dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
