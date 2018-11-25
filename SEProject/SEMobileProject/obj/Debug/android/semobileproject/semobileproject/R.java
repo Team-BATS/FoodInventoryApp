@@ -10,25 +10,37 @@ package semobileproject.semobileproject;
 public final class R {
     public static final class attr {
     }
+    public static final class drawable {
+        public static final int androidvegetables=0x7f020000;
+        public static final int buttonstyle=0x7f020001;
+    }
     public static final class id {
-        public static final int BackTestButton=0x7f040006;
-        public static final int FriendFridgeButton=0x7f040003;
-        public static final int GameButton=0x7f040005;
-        public static final int MainMenuImage=0x7f040001;
-        public static final int MainMenuUsername=0x7f040000;
-        public static final int MyFridgeButton=0x7f040002;
-        public static final int RecipeGeneratorButton=0x7f040004;
-        public static final int StartMenuBarrier=0x7f040008;
-        public static final int StartMenuLoginButton=0x7f040009;
-        public static final int StartMenuLogo=0x7f040007;
-        public static final int StartMenuSignUpButton=0x7f04000a;
+        public static final int BackFromMyFridgeMenu=0x7f06000d;
+        public static final int BackTestButton=0x7f060005;
+        public static final int EditMyFridge=0x7f06000b;
+        public static final int FriendFridgeButton=0x7f060002;
+        public static final int GameButton=0x7f060004;
+        public static final int MainMenuUsername=0x7f060000;
+        public static final int MyFridgeButton=0x7f060001;
+        public static final int RecipeGeneratorButton=0x7f060003;
+        public static final int StartMenuBarrier=0x7f060007;
+        public static final int StartMenuLoginButton=0x7f060008;
+        public static final int StartMenuLogo=0x7f060006;
+        public static final int StartMenuSignUpButton=0x7f060009;
+        public static final int UserFridgeBarrier=0x7f06000c;
+        public static final int ViewMyFridge=0x7f06000a;
     }
     public static final class layout {
-        public static final int mainmenu=0x7f020000;
-        public static final int myfridge=0x7f020001;
-        public static final int startmenu=0x7f020002;
+        public static final int editmyfridge=0x7f030000;
+        public static final int mainmenu=0x7f030001;
+        public static final int startmenu=0x7f030002;
+        public static final int userfridgemainmenu=0x7f030003;
+        public static final int viewmyfridge=0x7f030004;
     }
     public static final class string {
-        public static final int app_name=0x7f030000;
+        public static final int app_name=0x7f040000;
+    }
+    public static final class style {
+        public static final int Main=0x7f050000;
     }
 }

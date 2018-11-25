@@ -3,8 +3,8 @@
   <uses-sdk android:targetSdkVersion="23" android:minSdkVersion="23" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:allowBackup="true" android:label="Whats in My Fridge" android:name="android.app.Application" android:debuggable="true">
-    <activity android:label="SEMobileProject" android:name="md524fe5b94d2edae65734aa5f3d112cde4.MainActivity">
+  <application android:allowBackup="true" android:label="Whats in My Fridge" android:theme="@style/Main" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="SEMobileProject" android:name="md5faf7819d72d3791a1c99a4d9161f46fb.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

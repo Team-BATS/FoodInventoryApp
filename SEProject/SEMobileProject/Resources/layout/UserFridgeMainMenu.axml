@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/AndroidVegetables">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_margin="25dp"
+        android:id="@+id/MainMenuUsername"
+        android:text="Username's Fridge"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:textSize="28sp"
+        android:gravity="center" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="25dp"
+        android:id="@+id/ViewMyFridge"
+        android:background="@drawable/buttonstyle"
+        android:text="View My Fridge" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="25dp"
+        android:id="@+id/EditMyFridge"
+        android:background="@drawable/buttonstyle"
+        android:text="Edit My Fridge" />
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="170.0dp"
+        android:id="@+id/UserFridgeBarrier" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/BackFromMyFridgeMenu"
+        android:background="@drawable/buttonstyle"
+        android:text="GoBack" />
+</LinearLayout>

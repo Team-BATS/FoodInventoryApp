@@ -41,41 +41,69 @@ namespace SEMobileProject
 			}
 		}
 		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int AndroidVegetables = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int buttonstyle = 2130837505;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040006
-			public const int BackTestButton = 2130968582;
+			// aapt resource value: 0x7f06000d
+			public const int BackFromMyFridgeMenu = 2131099661;
 			
-			// aapt resource value: 0x7f040003
-			public const int FriendFridgeButton = 2130968579;
+			// aapt resource value: 0x7f060005
+			public const int BackTestButton = 2131099653;
 			
-			// aapt resource value: 0x7f040005
-			public const int GameButton = 2130968581;
+			// aapt resource value: 0x7f06000b
+			public const int EditMyFridge = 2131099659;
 			
-			// aapt resource value: 0x7f040001
-			public const int MainMenuImage = 2130968577;
+			// aapt resource value: 0x7f060002
+			public const int FriendFridgeButton = 2131099650;
 			
-			// aapt resource value: 0x7f040000
-			public const int MainMenuUsername = 2130968576;
+			// aapt resource value: 0x7f060004
+			public const int GameButton = 2131099652;
 			
-			// aapt resource value: 0x7f040002
-			public const int MyFridgeButton = 2130968578;
+			// aapt resource value: 0x7f060000
+			public const int MainMenuUsername = 2131099648;
 			
-			// aapt resource value: 0x7f040004
-			public const int RecipeGeneratorButton = 2130968580;
+			// aapt resource value: 0x7f060001
+			public const int MyFridgeButton = 2131099649;
 			
-			// aapt resource value: 0x7f040008
-			public const int StartMenuBarrier = 2130968584;
+			// aapt resource value: 0x7f060003
+			public const int RecipeGeneratorButton = 2131099651;
 			
-			// aapt resource value: 0x7f040009
-			public const int StartMenuLoginButton = 2130968585;
+			// aapt resource value: 0x7f060007
+			public const int StartMenuBarrier = 2131099655;
 			
-			// aapt resource value: 0x7f040007
-			public const int StartMenuLogo = 2130968583;
+			// aapt resource value: 0x7f060008
+			public const int StartMenuLoginButton = 2131099656;
 			
-			// aapt resource value: 0x7f04000a
-			public const int StartMenuSignUpButton = 2130968586;
+			// aapt resource value: 0x7f060006
+			public const int StartMenuLogo = 2131099654;
+			
+			// aapt resource value: 0x7f060009
+			public const int StartMenuSignUpButton = 2131099657;
+			
+			// aapt resource value: 0x7f06000c
+			public const int UserFridgeBarrier = 2131099660;
+			
+			// aapt resource value: 0x7f06000a
+			public const int ViewMyFridge = 2131099658;
 			
 			static Id()
 			{
@@ -90,14 +118,20 @@ namespace SEMobileProject
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int MainMenu = 2130837504;
+			// aapt resource value: 0x7f030000
+			public const int EditMyFridge = 2130903040;
 			
-			// aapt resource value: 0x7f020001
-			public const int MyFridge = 2130837505;
+			// aapt resource value: 0x7f030001
+			public const int MainMenu = 2130903041;
 			
-			// aapt resource value: 0x7f020002
-			public const int StartMenu = 2130837506;
+			// aapt resource value: 0x7f030002
+			public const int StartMenu = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int UserFridgeMainMenu = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int ViewMyFridge = 2130903044;
 			
 			static Layout()
 			{
@@ -112,8 +146,8 @@ namespace SEMobileProject
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int app_name = 2130903040;
+			// aapt resource value: 0x7f040000
+			public const int app_name = 2130968576;
 			
 			static String()
 			{
@@ -121,6 +155,22 @@ namespace SEMobileProject
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Main = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

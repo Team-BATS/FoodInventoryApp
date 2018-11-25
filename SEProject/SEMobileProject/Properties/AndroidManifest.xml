@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SEMobileProject.SEMobileProject" android:versionCode="1" android:versionName="1.0" android:installLocation="internalOnly">
 	<uses-sdk android:targetSdkVersion="23" android:minSdkVersion="23" />
-	<application android:allowBackup="true" android:label="Whats in My Fridge"></application>
+	<application android:allowBackup="true" android:label="Whats in My Fridge" android:theme="@style/Main">
+  </application>
 </manifest>
