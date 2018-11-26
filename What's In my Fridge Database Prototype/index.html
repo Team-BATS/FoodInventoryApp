@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+
+  	<title>Firbase Database Prototype</title>
+ 	<link rel="stylesheet" href="css/testcss.css">
+  	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBUOrH7CxJmzpYPBKr53GuJfoBKUZRQ40E",
+	    authDomain: "teambats-ad5e2.firebaseapp.com",
+	    databaseURL: "https://teambats-ad5e2.firebaseio.com",
+	    projectId: "teambats-ad5e2",
+	    storageBucket: "teambats-ad5e2.appspot.com",
+	    messagingSenderId: "497410852846"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+	<script>
+	  firebase.initializeApp(config);
+	</script>
+  	<script src="js/index.js"></script>
+  	
+</head>
+
+<body>
+	<h1>Firebase Web App Prototype</h1>
+	<div id="login_div">
+		Email:
+		<input type="email" placeholder="Email..." id="email"><br>
+		Password:
+		<input type="password" placeholder="password" id="password"><br>
+		<button onclick="login()">Login to Accout</button>
+	</div>
+
+	<div id="user_div" class="loggedin-div">
+	    <h3>Welcome User</h3>
+	    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+	    
+	</div>
+
+	<div id="user_menu">
+		<button onclick="logout()">Logout</button>
+	    <button onclick="viewlist()">View Pantry</button>
+		<button onclick="editlist()">Edit Pantry</button>
+	</div>
+
+	<div id="edit_div" class="editlist_div">
+		<button onclick="additem()">Add Item To Pantry</button>
+		<button onclick="removeitem()">Remove Item From Pantry</button>
+		<button onclick="edititem()">Edit Item in Pantry</button>
+		<button onclick="backtomain()">Back</button>
+	</div>
+
+	<div id="itemList">
+		<button onclick="backtomain()">Back to Main</button>
+		<p> User's Current Pantry </p>
+		<ul id="food_object_list">
+			
+		</ul>
+	</div>
+
+	<div id="additemform">
+		<button onclick="backtomain()">Back to Main</button>
+		<h3>Add a food</h3>
+		<p>Food Item: </p>
+		<input type="text" name="food" id="food-in">
+		<p>Quantity (num): </p>
+		<input type="number" name="quantity" id="quan-in"> <br/>
+		<button onclick="additemToDatabase()"> Submit </button>
+	</div>
+
+</body>
+
+</html>
