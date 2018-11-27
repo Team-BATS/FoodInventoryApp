@@ -5,3 +5,58 @@
 #itemList{
 	display: none;
 }
+
+body{
+	background-image: url("FoodBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+h1{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+div{
+    color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#login_div{
+	width: 300px;
+    border: 5px solid black;
+    padding: 25px;
+    margin: 25px;
+    background-color: white;
+    position: absolute;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	
+}
+
+#login_but{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#login_p{
+	width: 75px;
+	display: inline-block;
+}
+
+h1{
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+}
