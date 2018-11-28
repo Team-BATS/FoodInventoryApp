@@ -124,7 +124,7 @@ function editlist(){
 	document.getElementById("edit_div").style.display = "block";
 }
 
-function removeitem(){
+function edititem(){
 	document.getElementById("edit_div").style.display = "none";
 	document.getElementById("listDropDown").style.display = "block";
 	//create references
@@ -156,9 +156,38 @@ function deleteitem(){
 	viewlist();
 }
 
+function editchosenitem(){
+	document.getElementById("listDropDown").style.display = "none";
+	document.getElementById("edititem_div").style.display = "block";
+	var item = document.getElementById("deletelist").value;
+	var database = firebase.database();
+	var listRef = database.ref('users/' + uid + '/Pantry');
+	var cur_quant;
+	listRef.on('value', function(snapshot){
+		cur_snap = snapshot.val();
+		cur_quant = cur_snap[item].food_quantity;
+	});
+	document.getElementById("itemname").innerHTML = item;
+	document.getElementById("new_quant").placeholder = cur_quant;
+}
+
+function confirmedit(){
+	var new_quant = document.getElementById("new_quant").value;
+	var item = document.getElementById("itemname").innerHTML;
+
+	firebase.database().ref('users/' + uid + '/Pantry/' + item).set({
+		food_name: item,
+		food_quantity: new_quant
+	});
+	document.getElementById("edititem_div").style.display = "none";
+	viewlist();
+}
+
 
 function backtomain(){
 	document.getElementById("edit_div").style.display = "none";
+	document.getElementById("edititem_div").style.display = "none";
+	document.getElementById("listDropDown").style.display = "none";
 	document.getElementById("additemform").style.display = "none";
 	document.getElementById("itemList").style.display = "none";
 	document.getElementById("user_menu").style.display = "block";

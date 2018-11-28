@@ -6,7 +6,7 @@
 	display: none;
 }
 
-#itemList, #listDropDown{
+#itemList, #listDropDown, #edititem_div{
 	display: none;
 }
 
@@ -157,7 +157,7 @@ h1{
 	width: 300px;
 }
 
-#itemList, #listDropDown{
+#itemList, #listDropDown, #edititem_div{
     border: 5px solid black;
     background-color: white;
     position: relative;
