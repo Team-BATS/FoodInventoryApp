@@ -2,6 +2,10 @@
 	display: none;
 }
 
+#createaccount_div{
+	display: none;
+}
+
 #itemList{
 	display: none;
 }
@@ -19,7 +23,7 @@ body{
 	font-size: 50px;
 }
 
-#login_div{
+#login_div, #createaccount_div{
 	width: 300px;
     border: 5px solid black;
     padding: 25px;
