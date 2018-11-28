@@ -3,7 +3,7 @@
 <head>
   	<meta charset="utf-8">
 
-  	<title>Firbase Database Prototype</title>
+  	<title>WIMF APP</title>
  	<link rel="stylesheet" href="css/testcss.css">
   	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
 	<script>
@@ -32,10 +32,12 @@
 	<h1 id="title_head">What's in My Fridge?</h1>
 	<div id="login_div">
 		<p id="login_p" > Email: </p>
-		<input type="email" placeholder="Email..." id="email"><br>
+		<input type="email" placeholder="Email" id="email"><br>
 		<p id="login_p"> Password: </p>
-		<input type="password" placeholder="password" id="password"><br>
+		<input type="password" placeholder="Password" id="password"><br/>
 		<button id="login_but" onclick="login()">Login to Account</button>
+		<br/>
+		<button id="new_acc_nav" onclick="gotoAccountCreation()">Create New Account</button>
 	</div>
 
 	<div id="user_div" class="loggedin-div">
@@ -73,6 +75,24 @@
 		<p>Quantity (num): </p>
 		<input type="number" name="quantity" id="quan-in"> <br/>
 		<button onclick="additemToDatabase()"> Submit </button>
+	</div>
+
+	<div id="createaccount_div">
+		<p>Email:</p>
+		<input type="email" name="new_email" id="n_email" required>
+		<p>Password:</p>
+		<input type="password" name="new_password" id="n_password" required>
+		<p>Retype Password:</p>
+		<input type="password" name="new_password" id="n_password_check" required>
+		<br/>
+		<p>User Name:</p>
+		<input type="text" id="user_name" required>
+		<p>Favorite Food</p>
+		<input type="text" id="fav_food" required>
+		<p>
+		<button onclick="createNewAccount()"> Create Account </button>
+		<br/>
+		<button onclick="backtologin()"> Cancel </button>
 	</div>
 
 </body>

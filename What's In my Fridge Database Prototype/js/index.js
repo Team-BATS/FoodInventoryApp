@@ -1,4 +1,7 @@
 var uid = 0;
+var accountCreate = false;
+var username;
+var favfood;
 
 firebase.auth().onAuthStateChanged(function(user) {
   	if (user) {
@@ -17,6 +20,16 @@ firebase.auth().onAuthStateChanged(function(user) {
 	    var isAnonymous = user.isAnonymous;
 	    uid = user.uid;
 	    var providerData = user.providerData;
+
+	    if(accountCreate == true){
+	    	firebase.database().ref('users/' + uid + '/UserData').set({
+				user_name: username,
+				favorite_food: favfood
+			});
+			accountCreate = false;
+			username = "";
+			favfood = "";
+	    }
 
 	    if(user != null){
 
@@ -49,6 +62,38 @@ function login(){
     // ...
   });
 
+}
+
+function gotoAccountCreation(){
+	document.getElementById("login_div").style.display = "none";
+	document.getElementById("createaccount_div").style.display = "block";
+}
+
+function createNewAccount(){
+	var pass = document.getElementById("n_password").value;
+	var check = document.getElementById("n_password_check").value;
+
+	if(pass == check){
+		var user_email = document.getElementById("n_email").value;
+		username = document.getElementById("user_name").value;
+		favfood = document.getElementById("fav_food").value;
+		accountCreate = true;
+		document.getElementById("createaccount_div").style.display = "none";	
+
+		firebase.auth().createUserWithEmailAndPassword(user_email, pass).catch(function(error) {
+			  // Handle Errors here.
+			  var errorCode = error.code;
+			  var errorMessage = error.message;
+			  // ...
+		});
+		
+
+	}
+	else{
+		alert("Your Passwords do not match, Try Again");
+		document.getElementById("n_password").value = "";
+		document.getElementById("n_password_check").value = "";
+	}
 }
 
 function viewlist(){
@@ -108,4 +153,15 @@ function additemToDatabase(){
 function logout(){
   firebase.auth().signOut();
   uid = 0;
+
+  	document.getElementById("user_div").style.display = "none";
+	document.getElementById("user_menu").style.display = "none";
+	document.getElementById("edit_div").style.display = "none";
+	document.getElementById("createaccount_div").style.display = "none";
+	document.getElementById("login_div").style.display = "block";
+}
+
+function backtologin(){
+	document.getElementById("login_div").style.display = "block";
+	document.getElementById("createaccount_div").style.display = "none";
 }
