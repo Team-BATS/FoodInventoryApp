@@ -124,6 +124,39 @@ function editlist(){
 	document.getElementById("edit_div").style.display = "block";
 }
 
+function removeitem(){
+	document.getElementById("edit_div").style.display = "none";
+	document.getElementById("listDropDown").style.display = "block";
+	//create references
+	var database = firebase.database();
+	var listRef = database.ref('users/' + uid + '/Pantry');
+	listRef.on('value', function(snapshot){
+		createDeleteList(snapshot.val());
+	});
+}
+
+function createDeleteList(snapshot){
+	var foodList = document.getElementById("deletelist");
+	while(foodList.firstChild){
+		foodList.removeChild(foodList.firstChild);
+	}
+	for(var key in snapshot){
+		var food = document.createElement("option");
+		food.appendChild(document.createTextNode(snapshot[key].food_name + ": " + snapshot[key].food_quantity));
+		food.value = snapshot[key].food_name;
+		foodList.appendChild(food);
+	}
+}
+
+function deleteitem(){
+	var item = document.getElementById("deletelist").value;
+	firebase.database().ref('users/' + uid + '/Pantry/' + item).remove();
+	//alert("Delete Occuring");
+	document.getElementById("listDropDown").style.display = "none";
+	viewlist();
+}
+
+
 function backtomain(){
 	document.getElementById("edit_div").style.display = "none";
 	document.getElementById("additemform").style.display = "none";
